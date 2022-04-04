@@ -19,7 +19,8 @@ import java.nio.charset.StandardCharsets
 
 buildscript {
   repositories {
-    mavenCentral()
+    maven { url "https://maven.aliyun.com/nexus/content/groups/public/" }
+//    mavenCentral()
   }
   apply from: "$rootDir/gradle/dependencies.gradle"
 
@@ -54,7 +55,8 @@ spotless {
 allprojects {
 
   repositories {
-    mavenCentral()
+//    mavenCentral()
+    maven { url "https://maven.aliyun.com/nexus/content/groups/public/" }
   }
 
   dependencyUpdates {
